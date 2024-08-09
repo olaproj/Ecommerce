@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title> E-commerce product page</title>
+  </head>
+  <body>
+    <div id="pop-up-background"></div>
+    <header>
+      <div class="left-section">
+        <img src="images/logo.svg" id="logo" />
+        <nav>
+          <ul>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right-section">
+        <div class="top-right-cart-container">
+          <div id="icon-cart-number">3</div>
+          <img src="images/icon-cart.svg" alt="" id="icon-cart" />
+        </div>
+        <img src="images/image-avatar.png" id="user" />
+      </div>
+    </header>
+    <div id="line"></div>
+    <div id="inside-cart" style="display: none">
+      <div id="inside-cart-top">
+        <p id="inside-cart-top-text">Cart</p>
+      </div>
+      <div id="cart-is-empty" style="display: none">
+        <p id="cart-is-empty-text">Your cart is empty.</p>
+      </div>
+      <div id="cart-is-fill" style="display: none">
+        <div id="cart-fill-container">
+          <img
+            id="inside-cart-product-img"
+            src="images/image-product-1-thumbnail.jpg"
+            alt=""
+          />
+          <div id="inside-cart-product-details">
+            <p id="inside-cart-product-name" class="inside-text">
+              Fall Limited Edition Sneakers
+            </p>
+            <div id="calculate">
+              <p id="inside-cart-product-price" class="inside-text">$125.00</p>
+              <p id="inside-cart-product-howmany" class="inside-text">x 0</p>
+              <p id="inside-cart-product-calculated-price">$375.00</p>
+            </div>
+          </div>
+          <img id="icon-delete" src="images/icon-delete.svg" alt="" />
+        </div>
+        <button id="inside-cart-checkout">Checkout</button>
+      </div>
+    </div>
+    <main>
+      <div class="main-left-section">
+        <img src="images/image-product-1.jpg" alt="" id="product-main-img" />
+        <div class="product-thumbnail">
+          <img
+            src="images/image-product-1-thumbnail.jpg"
+            class="thumbnail"
+            id="product-img-1"
+          />
+          <img
+            src="images/image-product-2-thumbnail.jpg"
+            class="thumbnail"
+            id="product-img-2"
+          />
+          <img
+            src="images/image-product-3-thumbnail.jpg"
+            class="thumbnail"
+            id="product-img-3"
+          />
+          <img
+            src="images/image-product-4-thumbnail.jpg"
+            class="thumbnail"
+            id="product-img-4"
+          />
+        </div>
+      </div>
+      <div class="main-right-section">
+        <h2>SNEAKER COMPANY</h2>
+
+        <h1>Fall Limited Edition Sneakers</h1>
+
+        <p id="product-description">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price-bundle">
+          <span id="product-price"> $125.00 </span>
+          <span id="discount-rate">50%</span>
+        </div>
+        <span id="old-price">$250.00</span>
+
+        <div id="counter">
+          <div class="left-side">
+            <span id="remove">
+              <img src="images/icon-minus.svg" id="minus" alt="" />
+            </span>
+            <p id="count-panel">0</p>
+            <span id="add">
+              <img src="images/icon-plus.svg" id="plus" alt="" />
+            </span>
+          </div>
+          <button id="add-to-cart">
+            <svg
+              id="button-cart"
+              width="22"
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                fill="#FFFFFF"
+                fill-rule="nonzero"
+              />
+            </svg>
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </main>
+    <div id="main-slide" style="display: none">
+      <div id="slide">
+        <img id="icon-close" src="images/icon-close.svg" alt="" />
+        <button class="direction-btn" id="icon-previous-btn">
+          <img class="direction" src="images/icon-previous.svg" alt="" />
+        </button>
+        <img
+          class="slide-img"
+          id="slide-img-1"
+          src="images/image-product-1.jpg"
+          alt=""
+          style="display: none"
+        />
+        <img
+          class="slide-img"
+          id="slide-img-2"
+          src="images/image-product-2.jpg"
+          alt=""
+          style="display: none"
+        />
+        <img
+          class="slide-img"
+          id="slide-img-3"
+          src="images/image-product-3.jpg"
+          alt=""
+          style="display: none"
+        />
+        <img
+          class="slide-img"
+          id="slide-img-4"
+          src="images/image-product-4.jpg"
+          alt=""
+          style="display: none"
+        />
+        <button class="direction-btn" id="icon-next-btn">
+          <img class="direction" src="images/icon-next.svg" alt="" />
+        </button>
+      </div>
+      <div id="slide-tumbnails">
+        <img
+          id="pop-up-thumbnail-1"
+          class="pop-up-thumbnails , pop-active"
+          src="images/image-product-1-thumbnail.jpg"
+          alt=""
+        />
+        <img
+          id="pop-up-thumbnail-2"
+          class="pop-up-thumbnails"
+          src="images/image-product-2-thumbnail.jpg"
+          alt=""
+        />
+        <img
+          id="pop-up-thumbnail-3"
+          class="pop-up-thumbnails"
+          src="images/image-product-3-thumbnail.jpg"
+          alt=""
+        />
+        <img
+          id="pop-up-thumbnail-4"
+          class="pop-up-thumbnails"
+          src="images/image-product-4-thumbnail.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        >. Coded by
+        <a href="https://github.com/AlarimaDaniel" target="_blank"
+          >Alarima Daniel</a
+        >. 
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
